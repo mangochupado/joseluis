@@ -31,6 +31,33 @@
             return false; // Evitar que el formulario se envíe y recargue la página
         }
     </script><!-- Script para la logica del programa -->
+    <br>
+    <h1>Calculador de perimetro del triángulo</h1>
+    <p class="instructions">Ingresa los lados del triángulo para calcular su perímetro.</p><!-- Instrucciones para el usuario -->
+    <form id="perimeterForm" onsubmit="return calculatePerimeter()"><!-- Formulario para ingresar los datos -->
+        <label for="sideA">Lado A:</label>
+        <input type="number" id="sideA" required><br><br><!-- Campo para ingresar el lado A del triangulo -->
+        
+        <label for="sideB">Lado B:</label>
+        <input type="number" id="sideB" required><br><br><!-- Campo para ingresar el lado B del triangulo -->
+        
+        <label for="sideC">Lado C:</label>
+        <input type="number" id="sideC" required><br><br><!-- Campo para ingresar el lado C del triangulo -->
+        
+        <input type="submit" value="Calcular Perímetro"><!-- Boton para calcular el perimetro -->
+    </form>
+    <br>
+    <div id="perimeterResult"></div><!-- Mostrar el resultado del perimetro -->
+    <script>
+        function calculatePerimeter() {
+            const sideA = parseFloat(document.getElementById('sideA').value);// Obtener el valor del lado A
+            const sideB = parseFloat(document.getElementById('sideB').value);// Obtener el valor del lado B
+            const sideC = parseFloat(document.getElementById('sideC').value);// Obtener el valor del lado C
+            const perimeter = sideA + sideB + sideC;// Calcular el perimetro del triangulo
+            document.getElementById('perimeterResult').innerText = `El perímetro del triángulo es: ${perimeter}`;// Mostrar el resultado
+            return false; // Evitar que el formulario se envíe y recargue la página
+        }
+    </script><!-- Script para la logica del programa -->
     
     
 </body>

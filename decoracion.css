@@ -41,3 +41,13 @@ body {
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     background-position: center; /* Centrar la imagen */
 }
+#perimeterForm{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #4b4d4b;
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translateX(-50%);
+}
