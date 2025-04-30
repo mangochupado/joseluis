@@ -7,6 +7,14 @@
 </head>
 <body>
     <h1>Calculador de area del triangulo</h1><!-- Titulo de la pagina -->
+    <form id="triangleForm" onsubmit="return calculateArea()"><!-- Formulario para ingresar los datos -->
+        <label for="base">Base:</label>
+        <input type="number" id="base" required><br><br><!-- Campo para ingresar la base del triangulo -->
+        
+        <label for="height">Altura:</label>
+        <input type="number" id="height" required><br><br><!-- Campo para ingresar la altura del triangulo -->
+        
+        <input type="submit" value="Calcular Area"><!-- Boton para calcular el area -->
     
 </body>
 </html>
