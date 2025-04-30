@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Calculador de area del triangulo</h1><!-- Titulo de la pagina -->
+    <h3>bienvenido a triangle calculator</h3><!--Bienvenida-->
+    <p>Ingresa la base y la altura del triángulo para calcular su área.</p><!-- Instrucciones para el usuario -->
     <form id="triangleForm" onsubmit="return calculateArea()"><!-- Formulario para ingresar los datos -->
         <label for="base">Base:</label>
         <input type="number" id="base" required><br><br><!-- Campo para ingresar la base del triangulo -->
@@ -15,6 +17,19 @@
         <input type="number" id="height" required><br><br><!-- Campo para ingresar la altura del triangulo -->
         
         <input type="submit" value="Calcular Area"><!-- Boton para calcular el area -->
+    </form>
+    <div id="result"></div><!--Mostrar el resultado -->
+    <script src="script.js"></script><!--JavaScript para la logica del programa -->
+    <script>
+        function calculateArea() {
+            const base = parseFloat(document.getElementById('base').value);// Obtener el valor de la base
+            const height = parseFloat(document.getElementById('height').value);// Obtener el valor de la altura
+            const area = (base * height) / 2;// Calcular el area del triangulo
+            document.getElementById('result').innerText = `El área del triángulo es: ${area}`;// Mostrar el resultado
+            return false; // Evitar que el formulario se envíe y recargue la página
+        }
+    </script><!-- Script para la logica del programa -->
+
     
 </body>
 </html>
