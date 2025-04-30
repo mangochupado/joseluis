@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Triangle Calculator</title>
     <link rel="icon" href="ima/tri.png" type="image/png"> <!-- Icono de la pestaña -->
     <link rel="stylesheet" href="decoracion.css" /><!-- Hoja de estilos CSS -->
 </head>
 <body>
-    <h1>Calculador de area del triangulo</h1><!-- Titulo de la pagina -->
-    <h3>bienvenido a triangle calculator</h3><!--Bienvenida-->
-    <p>Ingresa la base y la altura del triángulo para calcular su área.</p><!-- Instrucciones para el usuario -->
+    <h1>Calculador de área del Triángulo</h1><!-- Titulo de la pagina -->
+    <h3>Bienvenido a triangle calculator</h3><!--Bienvenida-->
+    <p class="instructions">Ingresa la base y la altura del triángulo para calcular su área.</p><!-- Instrucciones para el usuario -->
     <form id="triangleForm" onsubmit="return calculateArea()"><!-- Formulario para ingresar los datos -->
         <label for="base">Base:</label>
         <input type="number" id="base" required><br><br><!-- Campo para ingresar la base del triangulo -->
@@ -18,6 +19,8 @@
         
         <input type="submit" value="Calcular Area"><!-- Boton para calcular el area -->
     </form>
+    <br>
+    <br>
     <div id="result"></div><!--Mostrar el resultado -->
     <script src="script.js"></script><!--JavaScript para la logica del programa -->
     <script>
@@ -29,7 +32,7 @@
             return false; // Evitar que el formulario se envíe y recargue la página
         }
     </script><!-- Script para la logica del programa -->
-
+    
     
 </body>
 </html>
