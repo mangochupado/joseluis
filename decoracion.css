@@ -27,13 +27,13 @@ h3{
     font-size: 18px;
 }
 #result{
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
     color: #ffffffea;
-    background-color: black;
-    background-size: 20px 30px;
-    background-repeat: no-repeat;
 }
 body {
     background-image: url('ima/astolfo-pictures-oi07gfhe4mgcksm4.jpg'); /* Ruta de la imagen */
