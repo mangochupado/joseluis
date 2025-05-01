@@ -4,3 +4,6 @@ h1 {
     background-size: 200px 300px;
     color: white; 
 }
+.texto {
+    display: inline-block;
+}

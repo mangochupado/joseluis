@@ -36,7 +36,6 @@ h1{
 }
 .instructions3{
     width: 200px;
-    margin: 0 auto;
     background-color: #4b4d4b;
     text-align: center;
     margin-top: 20px;
@@ -74,5 +73,5 @@ body {
     color: #ffffffea;
 }
 #nose{
-    text-align: left;
+    text-align: right; 
 }
