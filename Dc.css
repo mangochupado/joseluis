@@ -15,12 +15,15 @@ header {
 .titulo {
     display: flex;
 }
-nav a {
+#xD a {
     text-decoration: none;
     color: #333;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+}
+nav a{
+    text-decoration: none;
 }
 .cita {
     font-size: 10px;
@@ -54,7 +57,7 @@ nav a {
 }
 #tx4 {
     display: flex;
-    margin-left: 0;
+    margin-left: 10px;
 }
 #tx6 {
     color: blue;
@@ -79,4 +82,8 @@ nav a {
 #tx10 {
     display: flex;
     margin-left: 0;
+}
+#tx12 {
+    color: black;
+    margin-left: 5px;
 }

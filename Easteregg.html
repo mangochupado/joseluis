@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Easteregg</title>
+    <link rel="icon" href="ima/huevo.png" type="image/png">
+    <link rel="stylesheet" href="eg.css" />
 </head>
 <body>
+    <header>
+        <div class="titulo">
+            <h2>¡Sorpresa!</h2>
+        </div>
+    </header>
+    <h1 id="t1">¡Has encontrado el huevo de pascua!</h1>
+    <p class="instructions1">¡Felicidades! Has descubierto un secreto oculto en la página.</p>
     
+    <img id="img" src="ima/huevo.png" alt="Huevo de Pascua" width="300" height="300">
+    <h3>¿Quieres que te lea la mente?</h3>
+    <h3>Piensa en un número e introducelo</h3>
+    <form id="easterEggForm" onsubmit="return calculateEasterEgg()">
+        <label for="number">Número en el que estas pensando:</label>
+        <input type="number" id="number" required><br><br>
+        <input type="submit" value="Calcular">
+    </form>
+    <br>
+    <div id="easterEggResult"></div>
+    <script>
+        function calculateEasterEgg() {
+            const number = parseFloat(document.getElementById('number').value);
+            document.getElementById('easterEggResult').innerText = `Después de un análisis detallado por parte de nuestros expertos, hemos llegado a la conclusión de que está pensando en el número: ${number}`;
+            return false; // Evitar que el formulario se envíe y recargue la página
+        }
+    </script>
+    <br>
+    <hr>
+    <p class="cita">Gracias por visitar nuestra página. ¡Esperamos que disfrutes de tu experiencia!</p>
+    <nav class="redirect1">
+        <p id="tx1">Para volver a la página principal, haz clic</p>
+        <nav id="tx2">
+            <a id="tx3" href="file:///C:/Users/Lenovo/Desktop/codes/supositorio/pag.principal.html">aquí</a>
+        </nav>
+    </nav>  
 </body>
 </html>
