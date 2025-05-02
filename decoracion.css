@@ -1,7 +1,25 @@
-h1{
+#t1{
+    width: 520px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    font-family: sans-serif;
     text-align: center;
+    opacity: 0.8;
+    color: white;
 }
-h1{
+#t1{
+    size: 200px;
+}
+#t2{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    font-family: sans-serif;
+    text-align: center;
+    opacity: 0.8;
+    color: white;
+}
+#t2{
     size: 200px;
 }
 #triangleForm{
@@ -55,7 +73,7 @@ body {
     text-align: center;
 }
 #perimeterResult{
-    width: 200px;
+    width: 300px;
     margin: 0 auto;
     background-color: #4b4d4b;
     text-align: center;
@@ -100,4 +118,44 @@ body {
     font-size: 18px;
     color: #ffffffea;
     opacity: 0.8;
+}
+.base {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+}
+.altura {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+}
+#la {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+}
+#lb {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+}
+#lc {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
 }

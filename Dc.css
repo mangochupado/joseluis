@@ -22,3 +22,61 @@ nav a {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+.cita {
+    font-size: 10px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#lados {
+    color: rgb(0, 187, 255);
+}
+#Angulos {
+    color: rgb(0, 187, 19);
+}
+.redirect1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+#tx2 {
+    display: flex;
+    margin-left: 0;
+}
+#tx3 {
+    color: blue;
+}
+.redirect2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+#tx4 {
+    display: flex;
+    margin-left: 0;
+}
+#tx6 {
+    color: blue;
+}
+.redirect3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+#tx7 {
+    display: flex;
+    margin-left: 0;
+}
+#tx9 {
+    color: blue;
+}
+.redirect4 {
+    display: flex;
+    align-items: center;
+}
+#tx10 {
+    display: flex;
+    margin-left: 0;
+}

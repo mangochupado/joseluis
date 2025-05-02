@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="decoracion.css" /><!-- Hoja de estilos CSS -->
 </head>
 <body>
-    <h1>Calculador de área del Triángulo</h1><!-- Titulo de la pagina -->
+    <h1 id="t1">Calculador de área del Triángulo</h1><!-- Titulo de la pagina -->
     <p class="instructions1">Ingresa la base y la altura del triángulo para calcular su área.</p><!-- Instrucciones para el usuario -->
     <form id="triangleForm" onsubmit="return calculateArea()"><!-- Formulario para ingresar los datos -->
-        <label for="base">Base:</label>
+        <label for="base" class="base">Base:</label>
         <input type="number" id="base" required><br><br><!-- Campo para ingresar la base del triangulo -->
         
-        <label for="height">Altura:</label>
+        <label for="height" class="altura">Altura:</label>
         <input type="number" id="height" required><br><br><!-- Campo para ingresar la altura del triangulo -->
         
         <input type="submit" value="Calcular Area"><!-- Boton para calcular el area -->
     </form>
+    <br>
     <br>
     <div id="result"></div><!--Mostrar el resultado -->
     <script src="script.js"></script><!--JavaScript para la logica del programa -->
@@ -31,16 +32,17 @@
         }
     </script><!-- Script para la logica del programa -->
     <br>
-    <h1>Calculador de perimetro del Triángulo</h1>
+    <br>
+    <h1 id="t2">Calculador de perimetro del Triángulo</h1>
     <p class="instructions2">Ingresa los lados del triángulo para calcular su perímetro.</p><!-- Instrucciones para el usuario -->
     <form id="perimeterForm" onsubmit="return calculatePerimeter()"><!-- Formulario para ingresar los datos -->
-        <label for="sideA">Lado A:</label>
+        <label for="sideA" id="la">Lado A:</label>
         <input type="number" id="sideA" required><br><br><!-- Campo para ingresar el lado A del triangulo -->
         
-        <label for="sideB">Lado B:</label>
+        <label for="sideB" id="lb">Lado B:</label>
         <input type="number" id="sideB" required><br><br><!-- Campo para ingresar el lado B del triangulo -->
         
-        <label for="sideC">Lado C:</label>
+        <label for="sideC" id="lc">Lado C:</label>
         <input type="number" id="sideC" required><br><br><!-- Campo para ingresar el lado C del triangulo -->
         
         <input type="submit" value="Calcular Perímetro"><!-- Boton para calcular el perimetro -->
