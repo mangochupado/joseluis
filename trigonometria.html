@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trigonometria</title>
+    <link rel="icon" href="ima/rectangulo.png" alt="triangulo rectangulo" type="image/png">
+    <link rel="stylesheet" href="trg.css" />
 </head>
 <body>
+    <h1 id="titulo">Calculador Trigonometrico</h1>
+    <p id="instr">(Si no sabes cuáles medidas son las requeridas, ve al link del final de la página).</p>
+    <div id="sen">
+        <div id="hp1">
+            <p>Ingresa el cateto opuesto y el ángulo para obtener hipotenusa.</p>
+            <form id="trigForm" onsubmit="return calculateHypotenuse()">
+                <label for="opuesto">Cateto Opuesto:</label>
+                <input type="number" id="opuesto" required><br><br>
+
+                <label for="angulo">Ángulo (en grados):</label>
+                <input type="number" id="angulo" required><br><br>
+
+                <input type="submit" value="Calcular Hipotenusa">
+            </form>
+            <br>
+            <div id="trigResult"></div><!-- Mostrar el resultado del trigonometria -->
+            <script>
+            function calculateHypotenuse() {
+                const opuesto = parseFloat(document.getElementById('opuesto').value);// Obtener el valor del cateto opuesto
+                const angulo = parseFloat(document.getElementById('angulo').value);// Obtener el valor del angulo
+                const radianes = angulo * (Math.PI / 180);// Convertir grados a radianes
+                const hipotenusa = opuesto / Math.sin(radianes);// Calcular la hipotenusa usando la función seno
+                document.getElementById('trigResult').innerText = `La hipotenusa es: ${hipotenusa}`;// Mostrar el resultado
+                return false; // Evitar que el formulario se envíe y recargue la página
+            }
+            </script><!-- Script para la logica del programa -->
+        </div>
+        <div id="CO">
+            <p>Ingresa hipotenusa y ángulo para obtener cateto opuesto.</p>
+            <form id="trigForm3" onsubmit="return calculateCatetoOpuesto()">
+                <label for="hipotenusa">Hipotenusa:</label>
+                <input type="number" id="hipotenusa" required><br><br>
+
+                <label for="angulo3">Ángulo (en grados):</label>
+                <input type="number" id="angulo3" required><br><br>
+
+                <input type="submit" value="Calcular Cateto Opuesto">
+            </form>
+            <br>
+            <div id="trigResult3"></div><!-- Mostrar el resultado del trigonometria -->
+            <script>
+            function calculateCatetoOpuesto() {
+                const hipotenusa = parseFloat(document.getElementById('hipotenusa').value);// Obtener el valor de la hipotenusa
+                const angulo3 = parseFloat(document.getElementById('angulo3').value);// Obtener el valor del angulo
+                const radianes3 = angulo3 * (Math.PI / 180);// Convertir grados a radianes
+                const catetoOpuesto = hipotenusa * Math.sin(radianes3);// Calcular el cateto opuesto usando la función seno
+                document.getElementById('trigResult3').innerText = `El cateto opuesto es: ${catetoOpuesto}`;// Mostrar el resultado
+                return false; // Evitar que el formulario se envíe y recargue la página
+            }
+            </script><!-- Script para la logica del programa -->
+        </div>
+    </div>
+    <div id="cos">
+        <div id="hp2">
+            <p>Ingresa cateto adyacente y ángulo para obtener hipotenusa.</p>
+            <form id="trigForm2" onsubmit="return calculateHypotenuse2()">
+                <label for="adyacente">Cateto Adyacente:</label>
+                <input type="number" id="adyacente" required><br><br>
+
+                <label for="angulo2">Ángulo (en grados):</label>
+                <input type="number" id="angulo2" required><br><br>
+
+                <input type="submit" value="Calcular Hipotenusa">
+            </form>
+            <br>
+            <div id="trigResult2"></div><!-- Mostrar el resultado del trigonometria -->
+            <script>
+                function calculateHypotenuse2() {
+                    const adyacente = parseFloat(document.getElementById('adyacente').value);// Obtener el valor del cateto adyacente
+                    const angulo2 = parseFloat(document.getElementById('angulo2').value);// Obtener el valor del angulo
+                    const radianes2 = angulo2 * (Math.PI / 180);// Convertir grados a radianes
+                    const hipotenusa2 = adyacente / Math.cos(radianes2);// Calcular la hipotenusa usando la función coseno
+                    document.getElementById('trigResult2').innerText = `La hipotenusa es: ${hipotenusa2}`;// Mostrar el resultado
+                    return false; // Evitar que el formulario se envíe y recargue la página
+                }
+            </script><!-- Script para la logica del programa -->
+        </div>
+        <div id="CA">
+            <p>Ingresa hipotenusa y ángulo para obtener cateto adyacente.</p>
+            <form id="trigForm4" onsubmit="return calculateCatetoAdyacente()">
+                <label for="hipotenusa2">Hipotenusa:</label>
+                <input type="number" id="hipotenusa2" required><br><br>
+
+                <label for="angulo4">Ángulo (en grados):</label>
+                <input type="number" id="angulo4" required><br><br>
+
+                <input type="submit" value="Calcular Cateto Adyacente">
+            </form>
+            <br>
+            <div id="trigResult4"></div><!-- Mostrar el resultado del trigonometria -->
+            <script>
+                function calculateCatetoAdyacente() {
+                    const hipotenusa2 = parseFloat(document.getElementById('hipotenusa2').value);// Obtener el valor de la hipotenusa
+                    const angulo4 = parseFloat(document.getElementById('angulo4').value);// Obtener el valor del angulo
+                    const radianes4 = angulo4 * (Math.PI / 180);// Convertir grados a radianes
+                    const catetoAdyacente = hipotenusa2 * Math.cos(radianes4);// Calcular el cateto adyacente usando la función coseno
+                    document.getElementById('trigResult4').innerText = `El cateto adyacente es: ${catetoAdyacente}`;// Mostrar el resultado
+                    return false; // Evitar que el formulario se envíe y recargue la página
+                }
+            </script><!-- Script para la logica del programa -->
+        </div>
+    </div>
+    <div id="tan">
+        <div id="CA2">
+            <p>Ingresa cateto Opuesto y angulo para obtener cateto Adyacente</p>
+            <form id="trigForm5" onsubmit="return calculateCatetoAdyacente2()">
+                <label for="opuesto2">Cateto Opuesto:</label>
+                <input type="number" id="opuesto2" required><br><br>
+
+                <label for="angulo5">Ángulo (en grados):</label>
+                <input type="number" id="angulo5" required><br><br>
+
+                <input type="submit" value="Calcular Cateto Adyacente">
+            </form>
+            <br>
+            <div id="trigResult5"></div><!-- Mostrar el resultado del trigonometria -->
+            <script>
+                function calculateCatetoAdyacente2() {
+                    const opuesto2 = parseFloat(document.getElementById('opuesto2').value);// Obtener el valor del cateto opuesto
+                    const angulo5 = parseFloat(document.getElementById('angulo5').value);// Obtener el valor del angulo
+                    const radianes5 = angulo5 * (Math.PI / 180);// Convertir grados a radianes
+                    const catetoAdyacente2 = opuesto2 / Math.tan(radianes5);// Calcular el cateto adyacente usando la función tangente
+                    document.getElementById('trigResult5').innerText = `El cateto adyacente es: ${catetoAdyacente2}`;// Mostrar el resultado
+                    return false; // Evitar que el formulario se envíe y recargue la página
+                }
+            </script><!-- Script para la logica del programa -->
+        </div>
+        <div id="CO2">
+            <p>Ingresa cateto Adyacente y angulo para obtener cateto Opuesto</p>
+            <form id="trigForm6" onsubmit="return calculateCatetoOpuesto2()">
+                <label for="adyacente2">Cateto Adyacente:</label>
+                <input type="number" id="adyacente2" required><br><br>
+
+                <label for="angulo6">Ángulo (en grados):</label>
+                <input type="number" id="angulo6" required><br><br>
+
+                <input type="submit" value="Calcular Cateto Opuesto">
+            </form>
+            <br>
+            <div id="trigResult6"></div><!-- Mostrar el resultado del trigonometria -->
+            <script>
+                function calculateCatetoOpuesto2() {
+                    const adyacente2 = parseFloat(document.getElementById('adyacente2').value);// Obtener el valor del cateto adyacente
+                    const angulo6 = parseFloat(document.getElementById('angulo6').value);// Obtener el valor del angulo
+                    const radianes6 = angulo6 * (Math.PI / 180);// Convertir grados a radianes
+                    const catetoOpuesto2 = adyacente2 * Math.tan(radianes6);// Calcular el cateto opuesto usando la función tangente
+                    document.getElementById('trigResult6').innerText = `El cateto opuesto es: ${catetoOpuesto2}`;// Mostrar el resultado
+                    return false; // Evitar que el formulario se envíe y recargue la página
+                }
+            </script><!-- Script para la logica del programa -->
+        </div>
+    </div>
+    <div class="end">
+        <div class="I">
+            <div class="I3">
+                <p class="instructions3">¿Quieres volver a calcular?</p><!-- Instrucciones para el usuario -->
+            </div>
+            <div class="I4">
+                <p class="instructions4">¿Quieres volver a la página principal?</p><!-- Instrucciones para el usuario -->
+            </div>
+        </div>
+        <nav id="botones">
+            <button id="reinicio" onclick="window.location.reload();">Reiniciar</button><!-- Boton para reiniciar el formulario -->
+            <nav id="enlace">
+                <a href="file:///C:/Users/Lenovo/Desktop/codes/supositorio/pag.principal.html"><img style="height: 40px;" src="ima/25694.png"></a><!-- Boton para volver a la pagina principal -->
+            </nav>
+        </nav>
+    </div>
     
 </body>
 </html>

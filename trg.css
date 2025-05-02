@@ -1,0 +1,85 @@
+#instr {
+    font-size: small;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+#titulo {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+}
+#sen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#CO {
+    margin-right: 100px;
+}
+#hp1 {
+    margin-left: 100px;
+}
+#cos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#CA {
+    margin-right: 90px;
+}
+#hp2 {
+    margin-left: 100px;
+}
+#tan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#CO2 {
+    margin-right: 70px;
+}
+#CA2 {
+    margin-left: 100px;
+}
+.I {
+    display: flex;
+    justify-content: space-between
+}
+.I3 {
+    display: flex;
+}
+.I4 {
+    display: flex;
+}
+#botones {
+    display: flex;
+    justify-content: space-between;
+}
+#enlace {
+    display: flex;
+    margin-right: 120px;
+}
+#reinicio {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+}
+.instructions3{
+    width: 200px;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+    opacity: 0.8;
+}
+.instructions4{
+    width: 300px;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+    opacity: 0.8;
+}
