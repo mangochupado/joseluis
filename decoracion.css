@@ -34,15 +34,6 @@ h1{
     color: #ffffffea;
     opacity: 0.8;
 }
-.instructions3{
-    width: 200px;
-    background-color: #4b4d4b;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-    color: #ffffffea;
-    opacity: 0.8;
-}
 #result{
     width: 200px;
     margin: 0 auto;
@@ -72,6 +63,41 @@ body {
     font-size: 18px;
     color: #ffffffea;
 }
-#nose{
-    text-align: right; 
+.I {
+    display: flex;
+    justify-content: space-between
+}
+.I3 {
+    display: flex;
+}
+.I4 {
+    display: flex;
+}
+#botones {
+    display: flex;
+    justify-content: space-between;
+}
+#enlace {
+    display: flex;
+    margin-right: 120px;
+}
+#reinicio {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+}
+.instructions3{
+    width: 200px;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+    opacity: 0.8;
+}
+.instructions4{
+    width: 300px;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+    opacity: 0.8;
 }

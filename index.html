@@ -57,11 +57,21 @@
             return false; // Evitar que el formulario se envíe y recargue la página
         }
     </script><!-- Script para la logica del programa -->
-    <p class="instructions3">¿Quieres volver a calcular?</p><!-- Instrucciones para el usuario -->
-    <button onclick="window.location.reload();">Reiniciar</button><!-- Boton para reiniciar el formulario -->
-    <div id="nose"><!-- Div para el boton de volver a la pagina principal -->
-        <p class="instructions4">¿Quieres volver a la página principal?</p><!-- Instrucciones para el usuario -->
-        <a href="file:///C:/Users/Lenovo/Desktop/codes/supositorio/pag.principal.html"><img style="height: 40px;" src="ima/25694.png"></a><!-- Boton para volver a la pagina principal -->
+    <div class="end">
+        <div class="I">
+            <div class="I3">
+                <p class="instructions3">¿Quieres volver a calcular?</p><!-- Instrucciones para el usuario -->
+            </div>
+            <div class="I4">
+                <p class="instructions4">¿Quieres volver a la página principal?</p><!-- Instrucciones para el usuario -->
+            </div>
+        </div>
+        <nav id="botones">
+            <button id="reinicio" onclick="window.location.reload();">Reiniciar</button><!-- Boton para reiniciar el formulario -->
+            <nav id="enlace">
+                <a href="file:///C:/Users/Lenovo/Desktop/codes/supositorio/pag.principal.html"><img style="height: 40px;" src="ima/25694.png"></a><!-- Boton para volver a la pagina principal -->
+            </nav>
+        </nav>
     </div>
 </body>
 </html>
