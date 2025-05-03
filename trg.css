@@ -1,8 +1,12 @@
 #instr {
+    width: 550px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
     font-size: small;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #ffffffea;
     text-align: center;
+    opacity: 0.8;
 }
 #titulo {
     width: 400px;
@@ -83,3 +87,4 @@
     color: #ffffffea;
     opacity: 0.8;
 }
+
