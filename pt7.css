@@ -1,0 +1,164 @@
+.I {
+    display: flex;
+    justify-content: space-between
+}
+.I3 {
+    display: flex;
+}
+.I4 {
+    display: flex;
+}
+#botones {
+    display: flex;
+    justify-content: space-between;
+}
+#enlace {
+    display: flex;
+    margin-right: 120px;
+}
+#reinicio {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+}
+.instructions3{
+    width: 200px;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+    opacity: 0.8;
+}
+.instructions4{
+    width: 300px;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+    opacity: 0.8;
+}
+body{
+    background-image: url('ima/tumadre.jpg'); /* Ruta de la imagen */
+    background-size:cover; /* Ajustar la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-position: center; /* Centrar la imagen */
+    color: #ffffffea;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    opacity: 0.8;
+}
+#formulario {
+    margin-top: 5px;
+    text-align: center;
+}
+#Instrucciones1 {
+    width: 450px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+#Instrucciones2 {
+    width: 450px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+#Instrucciones3 {
+    width: 450px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffffea;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+#formulario2 {
+    margin-top: 5px;
+    text-align: center;
+}
+#formulario3 {
+    margin-top: 5px;
+    text-align: center;
+}
+#resultado {
+    width: 180px;
+    margin: 0 auto;
+    background-color: #80615e;
+    text-align: center;
+    color: #ffffffea;
+}
+#resultado2 {
+    width: 180px;
+    margin: 0 auto;
+    background-color: #80615e;
+    text-align: center;
+    color: #ffffffea;
+}
+#resultado3 {
+    width: 180px;
+    margin: 0 auto;
+    background-color: #80615e;
+    text-align: center;
+    color: #ffffffea;
+}
+#C1 {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    color: #ffffffea;
+    font-size: 18px;
+}
+#C2 {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    color: #ffffffea;
+    font-size: 18px;
+}
+#C3 {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    color: #ffffffea;
+    font-size: 18px;
+}
+#C4 {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    color: #ffffffea;
+    font-size: 18px;
+}
+#C5 {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    color: #ffffffea;
+    font-size: 18px;
+}
+#C6 {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #4b4d4b;
+    text-align: center;
+    color: #ffffffea;
+    font-size: 18px;
+}

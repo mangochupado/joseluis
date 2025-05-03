@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pitagoras</title>
+    <link rel="icon" href="ima/pitagorras.png" type="image/png">
+    <link rel="stylesheet" href="pt7.css" />
 </head>
 <body>
+    <h1 id="Yuri">Calculadora de Pitagoras</h1>
+    <p id="Instrucciones1">Ingresa el cateto b y el cateto a para obtener hipotenusa.</p>
+    <form id="formulario" action="resultado.html" method="get">
+        <label id="C1" for="cateto_opuesto">Cateto opuesto:</label>
+        <input type="number" id="cateto_opuesto" name="cateto_opuesto" required><br><br>
+        <label id="C2" for="cateto_adyacente">Cateto adyacente:</label>
+        <input type="number" id="cateto_adyacente" name="cateto_adyacente" required><br><br>
+        <input type="submit" value="Calcular">
+    </form>
+    <br>
+    <div id="resultado"></div>
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+            
+            // Obtener los valores de los catetos
+            var catetoOpuesto = parseFloat(document.getElementById("cateto_opuesto").value);
+            var catetoAdyacente = parseFloat(document.getElementById("cateto_adyacente").value);
+            
+            // Calcular la hipotenusa usando el teorema de Pitágoras
+            var hipotenusa = Math.sqrt(Math.pow(catetoOpuesto, 2) + Math.pow(catetoAdyacente, 2));
+            
+            // Mostrar el resultado
+            document.getElementById("resultado").innerHTML = "La hipotenusa es: " + hipotenusa.toFixed(2);
+        });
+    </script>
+    <p id="Instrucciones2">Ingresa la hipotenusa y el cateto a para obtener cateto b.</p>
+    <form id="formulario2" action="resultado2.html" method="get">
+        <label id="C3" for="hipotenusa">Hipotenusa:</label>
+        <input type="number" id="hipotenusa" name="hipotenusa" required><br><br>
+        <label id="C4" for="cateto_a">Cateto a:</label>
+        <input type="number" id="cateto_a" name="cateto_a" required><br><br>
+        <input type="submit" value="Calcular">
+    </form>
+    <br>
+    <div id="resultado2"></div>
+    <script>
+        document.getElementById("formulario2").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+            
+            // Obtener los valores de la hipotenusa y el cateto a
+            var hipotenusa = parseFloat(document.getElementById("hipotenusa").value);
+            var catetoA = parseFloat(document.getElementById("cateto_a").value);
+            
+            // Calcular el cateto b usando el teorema de Pitágoras
+            var catetoB = Math.sqrt(Math.pow(hipotenusa, 2) - Math.pow(catetoA, 2));
+            
+            // Mostrar el resultado
+            document.getElementById("resultado2").innerHTML = "El cateto b es: " + catetoB.toFixed(2);
+        });
+    </script>
+
+    <p id="Instrucciones3">Ingresa la hipotenusa y el cateto b para obtener cateto a.</p>
+    <form id="formulario3" action="resultado3.html" method="get">
+        <label id="C5" for="hipotenusa2">Hipotenusa:</label>
+        <input type="number" id="hipotenusa2" name="hipotenusa2" required><br><br>
+        <label id="C6" for="cateto_b">Cateto b:</label>
+        <input type="number" id="cateto_b" name="cateto_b" required><br><br>
+        <input type="submit" value="Calcular">
+    </form>
+    <br>
+    <div id="resultado3"></div>
+    <script>
+        document.getElementById("formulario3").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+            
+            // Obtener los valores de la hipotenusa y el cateto b
+            var hipotenusa2 = parseFloat(document.getElementById("hipotenusa2").value);
+            var catetoB = parseFloat(document.getElementById("cateto_b").value);
+            
+            // Calcular el cateto a usando el teorema de Pitágoras
+            var catetoA = Math.sqrt(Math.pow(hipotenusa2, 2) - Math.pow(catetoB, 2));
+            
+            // Mostrar el resultado
+            document.getElementById("resultado3").innerHTML = "El cateto a es: " + catetoA.toFixed(2);
+        });
+    </script>
+    <div class="end">
+        <div class="I">
+            <div class="I3">
+                <p class="instructions3">¿Quieres volver a calcular?</p><!-- Instrucciones para el usuario -->
+            </div>
+            <div class="I4">
+                <p class="instructions4">¿Quieres volver a la página principal?</p><!-- Instrucciones para el usuario -->
+            </div>
+        </div>
+        <nav id="botones">
+            <button id="reinicio" onclick="window.location.reload();">Reiniciar</button><!-- Boton para reiniciar el formulario -->
+            <nav id="enlace">
+                <a href="file:///C:/Users/Lenovo/Desktop/codes/supositorio/pag.principal.html"><img style="height: 40px;" src="ima/25694.png"></a><!-- Boton para volver a la pagina principal -->
+            </nav>
+        </nav>
+    </div>
+
     
 </body>
 </html>
