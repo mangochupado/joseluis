@@ -33,7 +33,7 @@
     align-items: center;
 }
 #CA {
-    margin-right: 90px;
+    margin-right: 100px;
 }
 #hp2 {
     margin-left: 100px;
@@ -44,7 +44,7 @@
     align-items: center;
 }
 #CO2 {
-    margin-right: 70px;
+    margin-right: 100px;
 }
 #CA2 {
     margin-left: 100px;
@@ -87,4 +87,60 @@
     color: #ffffffea;
     opacity: 0.8;
 }
-
+body {
+   background-image: url(ima/XD.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+#CA {
+    background-color: #4b4d4b;
+    color: #ffffffea;
+    width: 380px;
+    height: 170px;
+    text-align: center;
+    opacity: 0.8;
+}
+#CO {
+    background-color: #4b4d4b;
+    color: #ffffffea;
+    width: 380px;
+    height: 170px;
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+#CA2 {
+    background-color: #4b4d4b;
+    color: #ffffffea;
+    width: 380px;
+    height: 170px;
+    text-align: center;
+    opacity: 0.8;
+}
+#CO2 {
+    background-color: #4b4d4b;
+    color: #ffffffea;
+    width: 380px;
+    height: 170px;
+    text-align: center;
+    opacity: 0.8;
+}
+#hp1 {
+    background-color: #4b4d4b;
+    color: #ffffffea;
+    width: 380px;
+    height: 170px;
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+#hp2 {
+    background-color: #4b4d4b;
+    color: #ffffffea;
+    width: 380px;
+    height: 170px;
+    text-align: center;
+    opacity: 0.8;
+}
